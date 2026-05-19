@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DreamSpace Website</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+/* HEADER */
+header{
+    background:#111;
+    color:white;
+    padding:15px 0;
+    text-align:center;
+}
+
+/* NAVIGATION */
+nav{
+    background:#222;
+    padding:10px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+nav a:hover{
+    color:orange;
+}
+
+/* HERO SECTION */
+.hero{
+    background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center;
+    background-size:cover;
+    height:400px;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.hero h1{
+    font-size:50px;
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+}
+
+/* SECTIONS */
+section{
+    padding:40px 20px;
+    text-align:center;
+}
+h2{
+    margin-bottom:20px;
+}
+
+/* ABOUT */
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* SERVICES */
+.services{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.service-box{
+    background:white;
+    width:250px;
+    margin:15px;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1)
+}
+.service-box:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+/* GALLERY */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.gallery img{
+    width:300px;
+    height:200px;
+    margin:10px;
+    border-radius:8px;
+}
+
+/* CONTACT */
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+.contact input, .contact textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+.contact button{
+    padding:10px 20px;
+    border:none;
+    background:#111;
+    color:white;
+    cursor:pointer;
+}
+.contact button:hover{
+    background:orange;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .services, .gallery{
+        flex-direction:column;
+        align-items:center;
+    }
+    .hero h1{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>DreamSpace</h1>
+<p>Create. Inspire. Grow.</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<h1>Welcome to Our Creative World</h1>
+</div>
+
+<section id="about" class="about">
+<h2>About Us</h2>
+<p>
+DreamSpace is a modern creative company focused on building powerful digital experiences.
+We design websites, create brands, and help businesses grow online.
+Our mission is to turn ideas into reality with passion and innovation.
+</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="service-box">
+<h3>Web Design</h3>
+<p>Modern and responsive website designs.</p>
+</div>
+<div class="service-box">
+<h3>Development</h3>
+<p>High performance and secure websites.</p>
+</div>
+<div class="service-box">
+<h3>Branding</h3>
+<p>Creative logos and brand identity.</p>
+</div>
+<div class="service-box">
+<h3>Marketing</h3>
+<p>Digital marketing and SEO solutions.</p>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="office">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="team">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="workspace">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="meeting">
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 DreamSpace. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+echo "# pageforproject" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ponugotikotesh/pageforproject.git
+git push -u origin main
